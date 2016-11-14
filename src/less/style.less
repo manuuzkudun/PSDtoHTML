@@ -8,9 +8,20 @@
 * {
   box-sizing: border-box;
 }
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* HERO SECTION */
 section#hero {
-  background-image: url('../img/hero-bg.png');
+
+  /* Hero Background image */
+  background-image: -webkit-linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('../img/hero-bg.png');
+  background-image: -o-linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('../img/hero-bg.png');
+  background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('../img/hero-bg.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -32,13 +43,54 @@ section#hero {
     }
   }
 
-  h2 {
-    font-size: 52px;
-    font-weight: 700;
-    text-transform: uppercase;
+  /* Call to action */
+  .cta {
+    display: inline-block;
+    margin-top: 90px;
+    position: relative;
+    .cta-imgs {
+      float: right;
+      position: absolute;
+      right: -135px;
+      .iphone {
+        width: 85%;
+        position: relative;
+        margin-bottom: -240px;
+      }
+    }
+    .cta-info {
+      float: left;
+      width: 60%;
+      padding-right: 150px;
+      h2.cta-heading {
+        color: white;
+        margin-bottom: 40px;
+      }
+      p.cta-para {
+        font-size: 36px;
+        line-height: 40px;
+        font-family: 'Poiret One', cursive;
+        color: white;
+        margin-bottom: 55px;
+      }
+      .cta-button {
+        padding: 23px 35px;
+        background: #282828;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: 0.3s;
+        &:hover {
+          background: #383737;
+          transition: 0.3s;
+        }
+        .phone-icon {
+          vertical-align: middle;
+          padding-right: 20px;
+        }
+      }
+    }
   }
-
-
 }
 
 .container {
@@ -46,6 +98,9 @@ section#hero {
   width: 100%;
   border: 1px solid blue;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
 }
 
 body {
