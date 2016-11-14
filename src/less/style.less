@@ -5,6 +5,42 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Poiret+One");
 
 /* GENERAL RULES */
+* {
+  box-sizing: border-box;
+}
+/* HERO SECTION */
+section#hero {
+  background-image: url('../img/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .nav > .nav-item {
+    display: inline-block;
+    a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-left: 30px;
+      padding-bottom: 3px;
+      border-bottom: 4px solid white transparent;
+      transition: border-bottom 0.1s, color 0.1s;
+      &:hover {
+        border-bottom: 4px solid white;
+        transition: border-bottom 0.1s, color 0.1s;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+
+}
+
 .container {
   max-width: 1100px;
   width: 100%;
