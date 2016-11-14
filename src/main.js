@@ -1,1 +1,1 @@
-alert('Js Working!')
+require('./less/style.less');
