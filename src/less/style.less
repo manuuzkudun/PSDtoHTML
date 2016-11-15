@@ -23,6 +23,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.block {
+  display: block;
+}
+
 #container() {
     max-width: 1100px;
     width: 100%;
@@ -205,4 +209,61 @@ section#download {
       }
     }
   } /* End container */
-}
+} /* End Download section */
+
+/* Footer section */
+footer#footer {
+  background-color: #2e2e38;
+  color: white;
+  /* Container */
+  .container {
+    padding: 120px 20px;
+    // Footer logo
+    .footer-logo {
+      .footer-logo-img {
+
+      }
+    } // End footer logo
+    // Row
+    .row {
+      overflow: hidden;
+      margin-top: 77px;
+      .col-4-footer {
+        width: 33.33%;
+        float:left;
+        padding: 30px;
+        .footer-heading {
+          font-size: 20px;
+          margin-bottom: 25px;
+        }
+        .popular-posts {
+          font-family: 'Poiret One', cursive;
+          .popular-posts-item {
+            list-style: none;
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 5px;
+            background: url("../img/rectangle.png") no-repeat;
+            padding-left: 70px;
+
+          }
+        }
+        .tweeter {
+          font-family: 'Poiret One', cursive;
+          .tweeter-item {
+            list-style: none;
+            margin-bottom: 25px;
+            .small-text {
+              font-size: 11px;
+            }
+          }
+        }
+        .about-p {
+          font-size: 15px;
+          font-family: 'Poiret One', cursive;
+          font-style: italic;
+        }
+      }
+    } // End row
+  } // End container
+} // End footer
