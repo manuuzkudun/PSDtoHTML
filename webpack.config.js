@@ -9,7 +9,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(otf|jpg|png)$/,
         loader: 'url?limit=25000'
       },
       {
