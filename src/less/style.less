@@ -23,14 +23,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.container {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  padding: 40px 20px;
-}
+
 
 /* HERO SECTION */
 section#hero {
@@ -43,69 +36,124 @@ section#hero {
   background-position: center;
   background-attachment: fixed;
 
-  .nav > .nav-item {
-    display: inline-block;
-    a {
-      color: white;
-      text-transform: uppercase;
-      text-decoration: none;
-      margin-left: 30px;
-      padding-bottom: 3px;
-      border-bottom: 4px solid white transparent;
-      transition: border-bottom 0.1s, color 0.1s;
-      &:hover {
-        border-bottom: 4px solid white;
-        transition: border-bottom 0.1s, color 0.1s;
-      }
-    }
-  }
-
-  /* Call to action */
-  .cta {
-    display: inline-block;
-    margin-top: 90px;
+  /* container */
+  .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
-    .cta-imgs {
-      float: right;
-      position: absolute;
-      right: -135px;
-      .iphone {
-        width: 85%;
-        position: relative;
-        margin-bottom: -240px;
-      }
-    }
-    .cta-info {
-      float: left;
-      width: 60%;
-      padding-right: 150px;
-      h2.cta-heading {
+    overflow: hidden;
+    padding: 40px 20px;
+
+    /* Navigation */
+    .nav > .nav-item {
+      display: inline-block;
+      a {
         color: white;
-        margin-bottom: 40px;
-      }
-      p.cta-para {
-        font-size: 36px;
-        line-height: 40px;
-        font-family: 'Poiret One', cursive;
-        color: white;
-        margin-bottom: 55px;
-      }
-      .cta-button {
-        padding: 23px 35px;
-        background: #282828;
-        color: white;
+        text-transform: uppercase;
         text-decoration: none;
-        border-radius: 50px;
-        transition: 0.3s;
+        margin-left: 30px;
+        padding-bottom: 3px;
+        border-bottom: 4px solid white transparent;
+        transition: border-bottom 0.1s, color 0.1s;
         &:hover {
-          background: #383737;
-          transition: 0.3s;
-        }
-        .phone-icon {
-          vertical-align: middle;
-          padding-right: 20px;
+          border-bottom: 4px solid white;
+          transition: border-bottom 0.1s, color 0.1s;
         }
       }
+    } /* End Navigation */
+    /* Call to action */
+    .cta {
+      display: inline-block;
+      margin-top: 90px;
+      position: relative;
+      .cta-imgs {
+        float: right;
+        position: absolute;
+        right: -135px;
+        .iphone {
+          width: 85%;
+          position: relative;
+          margin-bottom: -240px;
+        }
+      }
+      .cta-info {
+        float: left;
+        width: 60%;
+        padding-right: 150px;
+        h2.cta-heading {
+          color: white;
+          margin-bottom: 40px;
+        }
+        p.cta-para {
+          font-size: 36px;
+          line-height: 40px;
+          font-family: 'Poiret One', cursive;
+          color: white;
+          margin-bottom: 55px;
+        }
+        .cta-button {
+          padding: 23px 35px;
+          background: #282828;
+          color: white;
+          text-decoration: none;
+          border-radius: 50px;
+          transition: 0.3s;
+          &:hover {
+            background: #383737;
+            transition: 0.3s;
+          }
+          .phone-icon {
+            vertical-align: middle;
+            padding-right: 20px;
+          }
+        }
+      }
+    } /* End Call to action */
+  } /* End container */
+}  /* End Hero section */
+
+/* APP FEATURES SECTION */
+section#app-features {
+  /* Container */
+  .container {
+    text-align: center;
+    padding: 60px 20px;
+    .app-features-heading {
+      color: #8a8a8a;
+      margin-bottom: 40px;
+      text-transform: uppercase;
     }
-  }
-}
+    .app-features-p {
+      font-family: 'Poiret One', cursive;
+      font-size: 22px;
+      line-height: 28px;
+      padding: 0px 130px;
+    }
+    /* Row with app features */
+    .row {
+      overflow: hidden;
+      margin-top: 50px;
+      .col-4-app {
+        width: 33.33%;
+        float: left;
+        padding: 0px 45px;
+        .feature-img {
+
+        }
+        .feature-heading {
+          font-size: 24px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 30px 0;
+        }
+        .feature-p {
+          font-family: 'Poiret One', cursive;
+          font-size: 18px;
+          line-height: 24px;
+          color: #646464;
+        }
+      }
+    } /* End row */
+  } /* End container */
+} /* End app features section */
