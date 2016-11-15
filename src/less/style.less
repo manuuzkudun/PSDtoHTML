@@ -43,8 +43,6 @@ h2 {
 }
 
 
-
-
 /* HERO SECTION */
 section#hero {
 
@@ -223,6 +221,7 @@ footer#footer {
   color: white;
   /* Container */
   .container {
+    #container;
     padding: 120px 20px;
     // Footer logo
     .footer-logo {
@@ -273,3 +272,31 @@ footer#footer {
     } // End row
   } // End container
 } // End footer
+
+/* COPYRIGHT */
+section#copyright {
+  background-color: #d7dedc;
+  .container {
+    #container;
+    padding: 40px 0;
+    text-align: center;
+    .inline {
+      display: inline-block;
+      font-size: 20px;    }
+    .cr, .me {
+      margin-right: 40px;
+      &:after {
+        content: "";
+        border: 1px solid #555;
+        margin-left: 35px;
+      }
+    }
+    .social {
+      position: relative;
+      top: 10px;
+      .fb, .tw {
+        margin-right: 40px;
+      }
+    }
+  }
+}
