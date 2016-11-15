@@ -23,6 +23,16 @@ h2 {
   text-transform: uppercase;
 }
 
+#container() {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+
 
 
 /* HERO SECTION */
@@ -38,13 +48,7 @@ section#hero {
 
   /* container */
   .container {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    padding: 40px 20px;
-
+    #container;
     /* Navigation */
     .nav > .nav-item {
       display: inline-block;
@@ -117,6 +121,7 @@ section#hero {
 section#app-features {
   /* Container */
   .container {
+    #container;
     text-align: center;
     padding: 60px 20px;
     .app-features-heading {
@@ -157,3 +162,47 @@ section#app-features {
     } /* End row */
   } /* End container */
 } /* End app features section */
+
+/* Download section */
+section#download {
+  /* Section background */
+  background-image: url('../img/nose-bg.png');
+  background-size: cover;
+  background-position: center;
+  /* container */
+  .container {
+    #container;
+    padding: 0;
+    .download-info {
+      width:50%;
+      padding: 200px 0px;
+      .download-heading {
+        color: white;
+        margin-bottom: 40px;
+        .another-color {
+          color:  #f55150;
+        }
+      }
+      .download-p {
+        font-size: 24px;
+        line-height: 30px;
+        font-family: 'Poiret One', cursive;
+        margin-bottom: 50px;
+      }
+      .download-button {
+        background-color: #d9332d;
+        border-radius: 50px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        transition: 0.3s;
+        margin-left: 20px;
+        &:hover {
+          background-color: #c33934;
+          transition: 0.3s;
+        }
+      }
+    }
+  } /* End container */
+}
