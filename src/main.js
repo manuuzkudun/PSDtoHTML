@@ -14,6 +14,7 @@ $( document ).ready ( () => {
   const iphoneWp = document.querySelector('.iphone-js-wp');
   const iphoneOn = document.querySelector('.iphone-js-wp > .iphone-on');
   const iphoneBtn = document.querySelector('.iphone-js-wp > .iphone-btn');
+  const navigation = document.querySelector('.navbar ul.nav');
 
   const waypoint = new Waypoint({
     element: iphoneWp,
@@ -27,5 +28,9 @@ $( document ).ready ( () => {
   // Animation of pushing and then releasing the iphone button
   $(iphoneBtn).delay(2300).animate({bottom: "+=-3"}, 300);
   $(iphoneBtn).delay(300).animate({bottom: "+=3"}, 100);
+
+  $(".burger-nav").on("click", () => {
+    $(navigation).toggleClass("open");
+  });
 
 });
