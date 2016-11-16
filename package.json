@@ -26,6 +26,7 @@
     "animate.css": "^3.5.2",
     "jquery": "^3.1.1",
     "waypoints": "^4.0.1",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "wow.js": "^1.2.2"
   }
 }

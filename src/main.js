@@ -1,14 +1,15 @@
 import "./less/style.less";
 import "animate.css";
 import $ from "jquery";
-import jQuery from "jquery";
-require ("../node_modules/waypoints/lib/noframework.waypoints.min.js");
+import WOW from "wow.js";
+import "../node_modules/waypoints/lib/noframework.waypoints.min.js";
 
-// export for others scripts to use
 window.$ = $;
-window.jQuery = jQuery;
+const wow = new WOW();
 
 $( document ).ready ( () => {
+
+  wow.init();
 
   const iphoneWp = document.querySelector('.iphone-js-wp');
   const iphoneOn = document.querySelector('.iphone-js-wp > .iphone-on');
